@@ -1,0 +1,144 @@
+.main {
+    grid-column: 2;
+    grid-row: 2;
+    color: var(--text-color);
+    width: calc(925px - 134px);
+    padding: 135px 55px 63px 80px;
+    background-image: linear-gradient(to bottom, var(--gradient1) 2%, var(--gradient2) 100%), url("../images/trail-b3u6NeaiGkA-unsplash 1.png"); 
+    background-size: auto 1239px, auto;
+    background-repeat: no-repeat;
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    > h3 {
+        margin-top: 20px;
+    }
+    > *:not(:first-child) {
+        margin-top: 40px;
+    }
+}
+.assignButton {
+    width: 190px;
+    height: 45px;
+    background-color: var(--assign-btn-color);
+    padding: 11px 25px 10px;
+
+    &:hover {
+        background-color: var(--assign-btn-hover-color);
+    }
+}
+.aboutWhat {
+    width: 473px;
+    align-self: flex-end;
+}
+.now {
+    width: 437px;
+}
+.modules {
+    margin-left: -60px;
+    margin-right: -35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.programmForYou {
+    margin-top: 80px;
+
+    h1 {
+        width: 464px;
+    }
+    ul {
+        list-style-type: square;
+        margin: 0;
+        margin-top: 40px;
+        margin-left: -20px;
+        font-weight: 400;
+        width: 491px;
+
+        li {
+            color: var(--list-color);
+
+        }
+    }
+}
+.askQuestion {
+    border-left: 10px solid var(--module-heading-color); 
+    border-radius: 0%; 
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 36px;
+}
+.contacts {
+    display: flex;
+    column-gap: 80px;
+
+    > div > img {
+        border-radius: 50%;
+        border: 6px solid var(--image-border);
+    }
+    > div > div {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.contactLinks {
+    margin-top: 20px;
+}
+
+@media(max-width: 500px) {
+    .main {
+        grid-column: 1;
+        grid-row: 2;
+
+        padding: 40px 20px;
+        width: 280px;
+        border-radius: 0%;
+    }
+
+    .gradient {
+        margin-left: -20px;
+    }
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.2px;
+    }
+    .aboutWhat, .now {
+        width: 280px
+    }
+    .now {
+        height: 221px;
+    }
+    .modules {
+        margin: 20px auto 0px !important;
+        *:first-child > div {
+            position: initial;
+            margin-left: 119px;
+            margin-top: 10px;
+        }
+    }
+    .module-icon {
+        margin-right: -10px;
+        margin-bottom: -10px;
+    }
+    .programmForYou
+    {
+        h1 {
+            width: 280px;
+        }
+        ul {
+            width: 272px;
+            margin-top: 20px;
+
+            li {
+                font-size: 12px;
+            }
+        }
+    }
+    .contacts {
+        column-gap: 40px;
+        justify-content: center;
+    }
+}

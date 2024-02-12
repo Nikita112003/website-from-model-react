@@ -1,0 +1,24 @@
+.mobileNav {
+    display: none;
+    border-radius: 0;
+
+    div {
+        padding: 26px 20px 35px;
+    }
+}
+
+@media(max-width: 500px) {
+    .mobileNav {
+        display: initial;
+        width: 320px;
+        height: 80px;
+        position: relative;
+        background-color: var(--nav-mobile-background);
+
+        img {
+            position: absolute;
+            top: 26px;
+            right: 20px;
+        }
+    }
+}
